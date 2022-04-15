@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{box-sizing:border-box}
+*{margin:0; padding:0;}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+
+header {width:1260px; height:92px; background-color:gold; margin:0 auto;}
+#logo {width:195px; height:48px; float:left; background-color:green; margin:20px;}
+#logo > img {width:100%; height:100%;}
+.imgbox1 {width:54px; height:54%;display:inline-block;background-color:purple; margin:0 0 0 0px;}
+header > div:first-of-type {margin:0 0 200px 0px;}
+header > div:nth-of-type(2) {margin:0 0 0 500px;}
+header > div:nth-of-type(3) {margin:0 0 0 0px;}
+header > div:nth-of-type(4) {margin:0 0 0 0px;}
+header > div:nth-of-type(5) {margin:0 0 0 0px;}
+header > div:last-of-type {margin:0 0 0 0px;}
+nav {width:949px; height:41px; background-color:orange; margin:0px auto;float:left;}
+nav {text-align:center; font-size:12px;}
+nav > ul > li {display:inline-block;}
+nav > ul > li > a {font-size:14px; text-decoration:none;color:#000;font:medium;}
+#slider {width:1905px; height:858px; background-color:pink; margin:0 auto; background-image: url("img/23.jpg"); background-size:cover;}
+#slider > img {width:100%; height:100%;}
+h1 {font-size:45px;width:700px; height:250px;position:center; padding:200px 150px 100px 150px;}
+#slider > p {font-size:12px;margin:20px 0 0 150px;}
+#slider > button {background-color: rgb(0 171 132); border:0; padding:15px 10px 14px; color:#fff; opacity:0.8;margin:10px 0 0 150px;}
+#slider > button:hover{opacity:1.2;}
+
+
+
+.article1 > h3 { color:#2d2a24; font-size:48px; margin:0 0 0 24px;}
+
+.article1 {width:1210px; height: 616px; background-color:tomato; margin:0 auto;}
+.article1 > .group1 > a > img {width:100%; height:100%;}
+.article1 > .group1 {width:270px; height:352px;float:left; margin: 30px 5px 0px 30px; background-color:cyan;}
+.article1 > div:first-of-type {width:272px; height:351px;background-color:gray;display:inline-block; margin : 30px 30px 0px 1px;}
+.article1 > div:nth-of-type(2) {width:272px; height:351px;background-color:gray;display:inline-block; margin : 30px 30px 0px 10px;}
+.article1 > div:nth-of-type(3) {width:272px; height:351px;background-color:gray;display:inline-block; margin : 30px 30px 0px 10px;}
+.article1 > div:last-of-type {width:272px; height:351px;background-color:gray;display:inline-block; margin : 30px 0px 0px 10px;}
+
+
+
+.productcard {width:192.55px; height:25px; background-color:beige; font-size:16px;}
+.postcard {width:356.09; height:30px;font-size:12px; background-color:red; margin:0 auto; }
+
+
+.dollar > a {text-decoration:none; text-align:left; font-size:12px; color:#2d2a24;}
+.plusicon > a {text-decoration:none; text-align:right; font-size:12px; color:#817f7c; margin:0 0 0 132px;}
+
+.article2 {width:1210px; height: 665px; background-color:aquamarine; margin:0 auto;}
+
+.article2 > h4 { color:#2d2a24; font-size:48px; margin:0 0 0 24px;}
+
+.article2 > .group2 > a > img {width:100%; height:100%;}
+.article2 > .group2 > span > a{font-size:28px;}
+.article2 > .group2 > span > a {text-decoration:none;  color:#2d2a24;}
+.article2 > .group2 > span > a:hover{color:green; font-style:italic; }
+
+
+.article2 > div:first-of-type {width:375px; height:498px;background-color:gray;display:inline-block; margin:50px 36px 0px 0px;}
+.article2 > div:nth-of-type(2) {width:375px; height:498px;background-color:gray;display:inline-block; margin:50px 36px 0px 0px;}
+.article2 > div:last-of-type {width:375px; height:498px;background-color:gray;display:inline-block; margin:50px 0px 0px 0px;}
+
+.article3 {width:1210px; height: 1151px; background-color:greenyellow; margin:0 auto;}
+
+.article3 > h5 { color:#2d2a24; font-size:48px; margin:0 0 0 24px;}
+
+.article3 > .group3 {width:700px; height:900px; background-color:beige; float:left; margin:30px 0 0 0;}
+.article3 > .group3 > a > img {width:100%; height:100%;}
+
+.article3 > .group4 > .productcard1 {width:252.4px; height:25px;font-size:15px;}
+.article3 > .group4 > a > img {width:100%; height:100%;}
+.article3 > div:nth-of-type(2) {width:236px; height:308px; display:inline-block; background-color:bisque; margin:30px 13px 0 17px;}
+.article3 > div:nth-of-type(3) {width:236px; height:308px; display:inline-block; background-color:bisque; margin:30px 0 0 0px;}
+.article3 > div:nth-of-type(4) {width:236px; height:308px; display:inline-block; background-color:bisque; margin:60px 13px 0 17px;}
+.article3 > div:last-of-type {width:236px; height:308px; display:inline-block; background-color:bisque; margin:60px 0px 0 0px;}
+.article4 > .group4 > span {font-size:15px; margin:30px 0 0 0;}
+.productcard2 {width:356.09; height:30px;font-size:12px; background-color:red; margin:10px 0 0 0;}
+
+.dollar1 > a {font-size:12px; text-decoration:none; text-align:left; color:#2d2a24;}
+.plusicon1 > a {text-decoration:none; text-align:right; font-size:12px; color:#817f7c; margin:0 0 0 80px;}
+.group5 {width:370px; height:300px; float:left; background-color:beige; margin:10px 30px 0 0;}
+.group5 > img {width:30%; height:30%;}
+.feature {font-size:17px; padding: 0 0 8px; color:#2d2a24;}
+.subtitle {font-size:12px; color:#2d2a24;}
+
+
+.article4 > h6 { color:#2d2a24; font-size:24px;background-color:gold;}
+.bio{font-size:12px; color:#2d2a24; background-color:beige;}
+
+.article4 {width:1210px; height: 480px; background-color:red; margin:0 auto;}
+.brick {width:1905px; height:734.16px; background-color:beige; margin:0 auto;}
+.brick > .block1 {width:952.5px; height:734.16px; background-color:gray; margin:0 auto;float:right;}
+.brick > .block1 > img {width:100%; height:100%;}
+h2 {font-size:45px;width:700px; height:250px;position:center; padding:200px 150px 100px 150px;}
+.block2 > p {width:400px; height:50px; background-color:gold; font-size:12px;margin:100px 0 0 150px;}
+.block2 > button {background-color: rgb(0 171 132); border:0; padding:15px 10px 14px; color:#fff; opacity:0.8;margin:10px 0 0 150px;}
+.block2 > button:hover{opacity:1.2;}
+.block3 {width:1218px; height:302px; background-color:cyan; margin:0 auto;}
+.block4 {width:1905px; height: 470px; background-color:rgb(53, 52, 52); margin:0 auto;}
+
+
+</style>
+
+<title></title>
+</head>
+<body>
+<header>
+<div id="logo">
+<img src="img/5.jpg" alt="logo">
+</div>
+
+<div class="imgbox1"></div>
+<div class="imgbox1"></div>
+<div class="imgbox1"></div>
+<div class="imgbox1"></div>
+<div class="imgbox1"></div>
+
+<nav>
+<ul>
+<li><a href="">Plants</a></li>
+<li><a href="">Mother's Day<br> Collection</a></li>
+<li><a href="">New Arrivals</a></li>
+<li><a href="">Planters</a></li>
+<li><a href="">Plant<br> Care</a></li>
+<li><a href="">Blooming Plants &<br> Bouquets</a></li>
+<li><a href="">Faux</a></li>
+<li><a href="">Home &<br> Decor</a></li>
+<li><a href="">Gifts</a></li>
+<li><a href="">Corporate<br> Gifting</a></li>
+<li><a href="">Subscriptions</a></li>
+<li><a href="">Workshops & <br>Events</a></li>
+</ul>
+
+</nav>
+</header>
+  <div id="slider">
+    <h1>Gifts For All <br> Moms</h1>
+    <p>Show them your appreciation with a gift from our Mother’s Day edit.</p>
+    <button>Shop now</button>
+  </div>
+<section class="article1">
+  <h3>Gifts They’ll Love</h3>
+<div class="group1">
+  <a href="#"><img src="img/11.jpg" alt="flower"></a>
+    <div class="productcard">Petite Sunset Orchid</div>
+    <div class="postcard"><em>choose your planter style<br> & color</em></div>
+    <br>
+    <span class="dollar"><a href="#">$78</a></span>
+    <span class="plusicon"><a href="#">+ more options</a></span>
+    
+</div>
+<div class="group1">
+  <a href="#"><img src="img/12.jpg" alt="flower"></a>
+    <div class="productcard">Monstera Deliciosa</div>
+    <div class="postcard"><em>choose your planter style<br> & color</em></div>
+    <br>
+    <span class="dollar"><a href="#">$38 - 88</a></span>
+    <span class="plusicon"><a href="#">+ more options</a></span>
+</div>
+<div class="group1">
+  <a href="#"><img src="img/13.jpg" alt="flower"></a>
+    <div class="productcard">Tradescantia Pink Panther</div>
+    <div class="postcard"><br></div>
+    <br>
+    <span class="dollar"><a href="#">$28 - 46</a></span>
+    <span class="plusicon"><a href="#">+ more options</a></span>
+
+</div>
+<div class="group1">
+  <a href="#"><img src="img/14.jpg" alt="flower"></a>
+    <div class="productcard">I Dig You Kit</div>
+    <div class="postcard"><em>Giftable kit for fellow <br>plants lovers</em></div>
+    <br>
+    <span class="dollar"><a href="#">$97</a></span>
+    <span class="plusicon"><a href="#">+ more options</a></span>
+</div>
+</section>
+<section class="article2">
+   <h4>Featured Collections</h4>
+   <div class="group2">
+     <a href="#"><img src="img/15.jpg" alt="flower1"></a>
+     <span><a href="#">Flowers & Botanicals</a></span>
+     
+   </div>
+   <div class="group2">
+    <a href="#"><img src="img/16.jpg" alt="plant"></a>
+    <span><a href="#">Plant Care</a></span>
+   </div>
+   <div class="group2">
+    <a href="#"><img src="img/17.jpg" alt="plant2"></a>
+    <span><a href="#">Flowers & Botanicals</a></span>
+   </div>
+</section>
+<section class="article3">
+   <h5>Go Big, At Home</h5>
+   <div class="group3">
+     <a href="#"><img src="img/18.jpg" alt="plant3"></a>
+     
+  
+   </div>
+   <div class="group4">
+    <a href="#"><img src="img/19.jpg" alt="plant4"></a>
+    <div class="productcard1">Large Fan Palm</div>
+     <div class="productcard2"><em>Arrives in 10" diameter <br>grow pot</em></div>
+    <br>
+    <span class="dollar1"><a href="#">$88 - 158</a></span>
+    <span class="plusicon1"><a href="#">+ more options</a></span>
+   </div>
+   <div class="group4">
+    <a href="#"><img src="img/20.jpg" alt="plant5"></a>
+    <div class="productcard1">Large Fiddle Leaf Fig Tree</div>
+      <div class="productcard2"><em>Arrives in 10" diameter <br>grow pot</em></div>
+    <br>
+    <span class="dollar1"><a href="#">$118</a></span>
+    
+   </div>
+   <div class="group4">
+    <a href="#"><img src="img/21.jpg" alt="plant6"></a>
+    <div class="productcard1">Large ZZ Plant</div>
+      <div class="productcard2"><em>choose your planter style<br> & color</em></div>
+    <br>
+    <span class="dollar1"><a href="#">$108 - 179</a></span>
+    <span class="plusicon1"><a href="#">+ more options</a></span>
+   </div>
+   <div class="group4">
+    <a href="#"><img src="img/22.jpg" alt="plant7"></a>
+    <div class="productcard1">Large Snake Laurentii</div>
+      <div class="productcard2"><em>Arrives in 10" diameter <br>grow pot</em></div>
+    <br>
+    <span class="dollar1"><a href="#">$88 - 158</a></span>
+    <span class="plusicon1"><a href="#">+ more options</a></span>
+   </div>
+</section>
+<section class="article4">
+   <h6>To be human is to experience biophilia.</h6>
+   <p class="bio"><em>[bio-feelya]</em> — Our innate desire to connect with nature. It’s in our DNA.</p>
+   <hr>
+   <div class="group5">
+     <img src="img/icon1.jpg" alt="icon1">
+     <p class="feature">Carbon Neutral Shipping</p>
+     <p class="subtitle">Since we love nature & our planet, all of our orders are shipped via UPS carbon neutral shipping—keeping our carbon footprint as small as possible!</p>
+   </div>
+   <div class="group5">
+    <img src="img/icon2.jpg" alt="icon2">
+    <p class="feature">30-Day Customer Happiness Guarantee</p>
+    <p class="subtitle">Our team preps, prunes, & carefully packs every order—meaning lots of care goes into every step. If your plant arrives damaged or unhealthy, we will replace it for free!</p>
+   </div>
+   <div class="group5">
+    <img src="img/icon3.jpg" alt="icon3">
+    <p class="feature">Shop Online & In Store</p>
+    <p class="subtitle">Enjoy plants, planters, plant care, accessories, and more delivered to your door. Want hands-on plant expertise IRL? Stop by one of our shops in NYC, Boston, Chicago, LA, or San Francisco.</p>
+   </div>
+</section>
+<footer class="brick">
+  <div class="block1">
+    <img src="img/plant.jpg" alt="lastplant">
+  </div>
+  <div class="block2">
+    <h2>Join Our<br> Rewards<br> Program</h2>
+    <p>Shopping with The Sill means you’re supported every step of your plant parenthood journey. Become a member today to start enjoying exclusive perks.</p>
+    <button>Learn More</button>
+  </div>
+</footer>
+<footer class="block3">
+  <div class ="halfbox"></div>
+  <div class = "box"></div>
+
+</footer>
+<footer class="block4"></footer>
+
+
+</body>
+</html>
